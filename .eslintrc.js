@@ -22,6 +22,8 @@ module.exports = {
     "prettier/prettier": "error",
     "import/extensions": "off",
     "no-console": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
   },
   settings: {
     "import/parsers": {
