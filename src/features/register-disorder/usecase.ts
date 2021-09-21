@@ -6,13 +6,13 @@ export interface Input {
 }
 
 export interface Presenter {
-  onCreated(id: string): void
-  onNameExists(): void
+  onCreated(id: string)
+  onNameExists()
 }
 
 function usecase(presenter: Presenter): Usecase<Input> {
   return {
-    execute: (disorder: Input): void => {
+    execute: (disorder: Input) => {
       console.log("input: ", disorder)
       return presenter.onCreated("onCreated")
     },
